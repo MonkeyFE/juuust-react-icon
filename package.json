@@ -1,5 +1,6 @@
 {
   "name": "@monkeyfe/flight-icon",
+  "private": true,
   "version": "0.0.3",
   "description": "Icon automation workflow with Figma",
   "main": "dist/index.js",
