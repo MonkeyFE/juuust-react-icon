@@ -38,3 +38,13 @@ jobs:
         build_dir: docs
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+    - name: DingDing Work notification
+      uses: chf007/action-wechat-work@master
+      env:
+        WECHAT_WORK_BOT_WEBHOOK: ${{secrets.DINGDING_WORK_BOT_WEBHOOK}}
+      with:
+        msgtype: text
+        content: |
+          兄弟们，咱们的图标更新啦！
+          请使用 yarn upgrade @monkeyfe/icon --latest 更新。
+          在线查看图标：https://www.figma.com/file/sqovNAbJaavXc3HIzkd2ux/%E9%95%BF%E5%AE%89%E8%88%AA%E7%A9%BA%E5%9B%BE%E6%A0%87%E5%BA%93?node-id=0%3A1
